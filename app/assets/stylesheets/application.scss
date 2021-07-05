@@ -67,3 +67,8 @@
   }
 
 }
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  // You may not want a nav bar to render on each page
+}

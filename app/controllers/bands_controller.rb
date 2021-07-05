@@ -1,5 +1,6 @@
 class BandsController < ApplicationController
-  skip_before_action :verify_authenticity_token
+#   skip_before_action :verify_authenticity_token
+  # Not the greatest security, as any application can skip this
   before_action :set_band, only: [:show, :destroy, :edit, :update]
   before_action :set_genres, only: [:new, :edit]
   #Takes one arugment by default, being the symbol set_band, meaning we do not need to invoke it in the show and destroy method
